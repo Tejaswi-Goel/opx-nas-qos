@@ -171,6 +171,8 @@ public:
         total_queues_per_port = 0;
         cpu_queues = 0;
         max_sched_group_level = 0;
+        is_snapshot_support = false;
+        cpu_port = 0;
     };
 
     // switch wide info
@@ -179,6 +181,8 @@ public:
     uint_t total_queues_per_port;
     uint_t cpu_queues;
     uint_t max_sched_group_level;
+    bool   is_snapshot_support;
+    int    cpu_port;
 
     /************** Policers ***************/
 
